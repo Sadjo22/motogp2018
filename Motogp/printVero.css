@@ -1,0 +1,114 @@
+
+
+
+body { /* Modifica : il colore della pagina  - il font  - l'unita utilisato per il font */
+  background-color: transparent;
+  color: #000;
+  font-family :Serif;
+  font-size :12pt;
+  border: none;
+  margin: 0;
+
+}
+
+
+#header, #commenta, #menu, h4, #sponsor, h2, h3 {display: none}
+
+#footer, .moreinfo, #myBtn {display: none}
+
+h6{
+	display: block;
+	font-style:italic;
+	text-align: center;
+	padding-bottom: 1em;
+	 font-size :25pt;
+}
+
+.toptitle{
+	margin-top: -35.5em;
+}
+
+.toptitle{
+	margin-top: -35.5em;
+}
+
+
+
+,#tab1title, #tab2title{ /* visualisare i titoli  */
+  margin :0;
+  padding :0;
+  line-height :50pt;
+  font-size :40pt;
+}
+
+.prinTitle, .toptitle, #teamtitle{ /* visualisare i titoli  */
+  margin :0;
+  padding :0;
+  line-height :50pt;
+  font-size :40pt;
+  display: block;
+  margin-top: 0.5em;
+}
+
+	#pilo{
+    background-color:grey;
+	margin: 3em;
+	padding: 1em;
+	float: left;
+	border:1px solid black;
+	width: 33%;
+	height: 20em;
+	margin-left: -2em;
+	margin-top: 2.7em;
+	page-break-inside: avoid
+}
+
+
+#squad{
+	background-color:grey;
+	margin: 3em;
+	padding: 1em;
+	float: left;
+	border:1px solid black;
+	width: 37%;
+	height: 23em;
+	margin-left: -2em;
+	page-break-inside: avoid
+}
+
+
+
+h5{
+	page-break-before: always;
+}
+
+#logohome{
+	margin-top: -5em;
+}
+
+
+.gallery{
+	padding:0.2em;
+	padding-bottom:5em;
+	float:left;
+	width:25%;
+	height:10em;
+	margin: auto;
+	margin-left: 5%;
+	margin-top: 3em;
+}
+
+.date{
+	page-break-inside: avoid;
+	padding: -10%;
+	width: 100%;
+}
+
+
+
+
+    
+		
+     
+
+

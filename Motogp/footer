@@ -1,0 +1,10 @@
+<?php
+function footer(){
+  echo "<div class='footer'><address>hahahahahahahaahha <br />
+  <a href=\"mailto:gafarisantanna@yahoo.fr\">
+  gafarisantanna@yahoo.fr</a>
+  </address>
+</div>
+  ";
+}
+?>
