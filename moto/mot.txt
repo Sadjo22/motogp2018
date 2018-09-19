@@ -1,0 +1,351 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{breakurl}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage[hyperref]{xcolor}
+\usepackage{booktabs,multicol,array}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+
+
+
+\title{\huge \textbf{RELAZIONE TECNOLOGIE WEB}}
+\author{\textbf{Gruppo:}\\ FRANCESCO BARBARANTI\\  GAFARI SANT ANNA\\  PEGUY NYA SADJO \\  SAMUELE PAURO}
+\date{August 6, 2018}
+\newcommand{\Titolo}{Tecweb-2018}
+\newcommand{\Gruppo}{ Francesco, Gafari, Peguy, Samuele}
+\usepackage{lastpage} %info sul # dell'ultima pagina del documento
+\usepackage{fancyhdr} %per modificare dimensioni,margini, intestazioni e righe a piè di pagina
+\fancypagestyle{plain}{
+    % cancella tutti i campi di intestazione e piè di pagina
+    \fancyhf{}
+    
+    \lfoot{ %piè di pagina
+        \Titolo{} \ - \textit{\Gruppo{}}
+    }
+    \rfoot{Pagina \thepage{} di \pageref{LastPage}} %es: pag: 4 di 10
+    
+    %linea orizzontale alle posizioni top e bottom della pagina
+    \renewcommand{\headrulewidth}{0pt}  
+    \renewcommand{\footrulewidth}{0.3pt}
+}
+\pagestyle{plain}
+
+\begin{document}
+\begin{figure}[t]
+\centering
+\includegraphics[height=2in,width=2in]{Logo_Univpadova.png}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[height=1.5in,width=1.5in]{dipmat.jpg}
+\end{figure}
+
+\maketitle
+\textbf{Indirizzo web del sito: }\textcolor{red}{http://tecweb.studenti.math.unipd.it/speguyny/Motogp/home.php}\\
+\begin{center}
+     \textbf{* Credenziali di accesso}\\
+    \textbf{ amministratore:}\\
+    Username: admin\\
+    Password: admin\\
+\end{center}
+
+ 
+
+\clearpage
+{% i link dei colori della table of contents diventano neri, togliamo da questi il colore UniPD
+    \hypersetup{hidelinks}
+    \tableofcontents
+}
+\clearpage
+
+\section{\textcolor{red}{Introduzione}}
+\subsection{Abstract}
+Il sito da noi sviluppato(\textcolor{red}{\HUGE Motogp}) nasce da una passione comune per  \textcolor{red}{\HUGE Motogp Mondiale}.Nonostante che esistano gia numerosi siti con lo stesso scopo abbiamo cercato  di rimanere indipendenti rispettando i riquesiti del progetto. Abbiamo percio creato un sito che possa aiutare altri appassionati come noi.\\
+
+\subsection{Utenza }
+Il contenuto del nostro sito è destinato ad informare \textbf{Utenti e appassionati} di qualsiasi età tramite i link sviluppati chiaramente e con una massima precisione sulle ultime notizie di \textcolor{red}{\HUGE Motogp Mondiale}(le ultime gare, Gare future, Piloti, Team, Classifica). In piu offre un area dedicata alle  \textbf{recensioni} dove gli utenti possono interagire tra di loro. 
+
+ \subsection{Suddivisione dei ruoli }
+    \textbf{* Francesco Barbaranti}\\
+    \textcolor{red}{- \textbf{CSS:}} Creazione del css su tanti file.\\
+    \textcolor{red}{- \textbf{PHP:}} Scrittura di tanti file.\\
+    \textcolor{red}{- \textbf{TEST:}} Microsoft Edge, Google chrome sul proprio PC, Firefox su Windows 10.\\
+    \textcolor{red}{- \textbf{DATABASE:}} Popolamento del database\\
+
+
+\textbf{* Gafari Sant'anna}\\
+    \textcolor{red}{- \textbf{CSS:}} Creazione del css per Desktop, Mobile e Stampa.\\ 
+    \textcolor{red}{- \textbf{PHP:}} Scrittura di alcuni file.\\
+    \textcolor{red}{- \textbf{TEST:}} MAC OS sul proprio PC, Firefox su Windows 10.\\
+  
+\textbf{* Peguy Nya Sadjo}\\
+    \textcolor{red}{- \textbf{CSS:}} Creazione del css su tanti file.\\
+    \textcolor{red}{- \textbf{PHP:}} Scrittura di tanti file.\\
+    \textcolor{red}{- \textbf{TEST:}} Microsoft Edge, Google chrome sul proprio PC, Firefox su Windows 10, Safari, Telefono(Huawei tag-L01).\\
+    \textcolor{red}{- \textbf{JAVASCRIPT:}} Scrittura di tutti i controlli fatti .\\
+  
+\textbf{* Samuele Pauro}\\
+    \textcolor{red}{- \textbf{CSS:}} Creazione del css su alcuni file.\\ 
+    \textcolor{red}{- \textbf{PHP:}} Scrittura di alcuni file.\\
+    \textcolor{red}{- \textbf{TEST:}} Internet Explorer sul proprio PC, Safari .\\
+      
+  
+\textcolor{red}{\section{\textbf{Descrizione del sito  \hspace{3.4cm}}}}
+\subsection{\textbf{Organizzazione dell'informazione }}
+  Nella realizzazione del nostro sito, abbiamo preferito tenere separati 'presentazione', 'contenuto', e 'comportamento'.\\
+  Si è deciso di creare un layout con un sitema di navigazione a barra per rendere la navigazione sul sito piu efficiente e permettere a tutti gli utenti di avere un' idea generale sul suo contenuto  a prima  vista. Il sistema di navigazione si troverà all' inizio di ogni pagina web  come presente nella Figura \textcolor{red}{\ref{navbarpic}} per laptop e altri apparecchi di grande dimensione.
+
+\begin{figure}[H]
+ \includegraphics[width=\textwidth]{navbar.JPG}\\
+  \caption{ Presentazione della Navbar su PC.\label{navbarpic}}
+\end{figure}
+
+Per tablet e telefoni a seconda della dimensione, abbiamo  scelto un menu a tendina come si puo vedere sulla Figura \textcolor{red}{ \ref{menupic}} .\\
+
+\begin{figure}[H]
+    \centering
+ \includegraphics[width=0.7\textwidth, height=8cm]{menu.JPG}\\
+  \caption{ Presentazione della Navbar sui dispositivi mobili. \label{menupic}}
+\end{figure}
+
+ Come si puo vedere, il sito è composto di 7 sezioni:\textcolor{red}{\textbf{ Home, Classifiche, Calendario, Team e Piloti, Recensioni, Foto, Login.}}
+ 
+ 
+
+ \subsubsection{\textbf{Aree del sito}} 
+ \textcolor{red}{\textbf{- Home \hspace{1cm}}}Nella  homepage abbiamo preferito presentare in maniera precisa tutti i piloti che parteciperanno all'edizione 2018 attraverso una foto in cui si puo vedere la squadra d appartenenza. si posssono avere maggiore informazioni  sul prossimo evento(data, nome del circuito e un link che da maggiore informazioni sul circuito) e tutti gli sponsor presenti per l'edizione 2018 di Motogp. Questa pagina del sito è stata creata automaticamente dai file \textcolor{red}{nextevent.php} e \textcolor{red}{sponsor.php} .(Figura \textcolor{red}{ \ref{nxtev}})
+  \begin{figure}[H]
+    \centering
+ \includegraphics[width=0.7\textwidth, height=6cm]{nxtev.JPG}
+  \caption{ Homepage del nostro sito. \label{nxtev}}
+\end{figure}
+
+ \textcolor{red}{\textbf{- Classifiche \hspace{1cm}}} Nella Figura  \textcolor{red}{ \ref{classifica}}  si può visualizzare la classifica generale dei piloti e dei costruttori in base al punteggio ottenuto alla fine di ogni gara.Le tabelle sono state create dinamicamente per mezzo dei file \textcolor{red}{piloticlassify.php} e \textcolor{red}{teamclassify.php}. Le tabelle si aggiornano automaticamente alla fine di ogni gara, e costituiscono il contenuto di \textcolor{red}{classifica.php}
+
+
+ \begin{figure}[H]
+    \centering
+ \includegraphics[width=0.5\textwidth, height=6cm]{classifica.JPG}
+  \caption{ Classifica generale piloti e costruttori.\label{classifica}}
+\end{figure}
+
+\textcolor{red}{\textbf{-Calendario \hspace{1cm}}} come si puo osservare dalla Figura \textcolor{red}{ \ref{calendario}},il contenuto di questa pagina informa gli utenti in maniera dettagliata   su tutte le Gare(Data, Luogo, nome del circuito, detentore record sul circuito con una breve descrizione del circuito) che si svolgeranno durante l'anno corrente.La pagina è generata dinamicamente da  \textcolor{red}{calendario.php}\\
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth, height=6cm]{calendario.JPG}
+ \caption{ Calendario delle gare. \label{calendario}}
+\end{figure}
+
+ 
+\textcolor{red}{\textbf{- Team e Piloti \hspace{1cm}}}  nella Figura
+ \textcolor{red}{ \ref{piloti}}, si osserva che da questa pagina, l'utente ha maggiori informazioni sui piloti (età, nome, nazionalità e team d'appartenenza) e rispettivi  team dell'edizione 2018 di \textcolor{red}{\textbf{Motogp}}.La pagina è generata dinamicamente da  \textcolor{red}{piloti.php}\\
+ 
+ 
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth, height=7cm]{piloti.JPG}
+ \caption{ Piloti e Team. \label{piloti}}
+\end{figure} \\
+
+
+
+\textcolor{red}{\textbf{- Recensioni \hspace{1cm}}} attraverso questa pagina,gli utenti hanno possibilità di registrasi al sito e di poter interagire con altri utenti.L'utente, una volta che lascia un commento, rimarrà visibile sul sito.Lo si può visualizzare dalla Figura \textcolor{red}{ \ref{recensioni}}.
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth, height=6cm]{recensioni.JPG}
+ \caption{ Recensioni \label{recensioni}}
+\end{figure} 
+
+\textcolor{red}{\textbf{- Foto \hspace{1cm}}} come si vede in Figura \textcolor{red}{ \ref{foto}}, questa pagina rappresenta la galleria foto del sito.In questa galleria, l'utente vedrà le foto dei momenti forti dell'ultima gara con i commenti sotto ogni foto.
+In piu è stato  creato un slideshow che permette di scorrere tutte le foto una volta cliccato sopra una di esse.Dopo ogni gara, la galeria sarà aggiornata in modo che l'utente sia sempre informato dei tempi salienti dell'ultima gara. Tutto è stato fatto dinamicamente usando \textcolor{red}{foto.php}
+
+
+
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.8\textwidth, height=7cm]{foto.JPG}
+ \caption{ Galleria foto dell'ultima gara \label{foto}}
+\end{figure}\\
+
+\textcolor{red}{\textbf{- Login \hspace{1cm}}} come lo mostra la Figura \textcolor{red}{ \ref{login}}, questa pagina è dedicata ad un \textbf{ login form} che permette in primo piano all'utente non ancora registrato  di effettuare una registrazione dentro al sito.Una volta registrato, l'utente potrà effettuare il Login e avrà la possibilità di lasciare un commento sul sito. In piu, ogni volta che il login avverà con successo,al posto del Login, apparirà sulla navbarl'username dell'utente con un link correlato che una volta cliccato sopra, porterà ad una nuova pagina dedicata ai \textcolor{red}{\textbf{dati personali}}. In secondo piano, l'amministratore accederà alla sua pagina tramite un login coi credenziali dati sopra. 
+ 
+ 
+
+
+
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth, height=6cm]{login.JPG}
+ \caption{Login form \label{login}}
+\end{figure}
+ 
+ 
+ \subsubsection{\textbf{Struttura organizzativa }}
+ Per realizzare il sito in maniera accurata, abbiamo scelto di organizzare quasi tutto l'insieme dei dati dentro un database che facilita e rende efficiente sia la navigazione che le ricerche di dati precisi da parte dell'utente dentro il sito.  
+ 
+ \subsubsection{\textbf{Comportamento }}
+ Lo sviluppo del sito si è svolto con idee chiare su quale fossero le tipologie target di utenti e quali fossero i loro bisogni informativi.Un’interazione tipica con il sito prevede all’utente registrato di  salvare i propri dati personali.Le conclusioni a cui si è giunti sono due:\\
+ 1. \textbf{Tipi di dati salvati:} l’utente puo solo salvare i suoi dati personali.L’amministratore, invece, deve poter salvare dati riguardanti la società
+(classifica delle gare,dati dei piloti,sponsor, team,Foto ).\\
+
+ 2. \textbf{Operazioni sui dati:} l’amministratore del sito puo inserire i dati attraverso le pagine d' amministrazione, puo accedere alle proprie pagine di competenza dalla home tramite un Login coi credenziali definiti sopra.Questo punto di accesso è presente solo nella home, sia per motivi di semplicità che per motivi puramente estetici.Per l’accesso controllato alla parte amministrativa del sito si è fatto uso delle
+sessioni. Non è possibile accedere alle pagine protette da un login se questa non avviene con successo. Una volta effettuato il logout non è piu possibile accedere a tali pagine, se non tramite un nuovo login.
+ 
+\textcolor{red}{\section{\textbf{Accessibilità \hspace{2cm}}}}
+Il sito è stato sviluppato separando  come richiesto dai requisiti del progetto 'struttura, presentazione, contenuto'.In piu,abbiamo scelto di seguire e rispettare con accuretezza alcune linee guida della \textbf{Web Accessibility Content Guidelines(WACG2.0)} che sarebbe tra altro una delle versioni piu recenti di linee guida per l'accessibilità.in seguito, spiegheremo brevemente come sono state implementate alcune linee guida nel nostro sito per facilitare l'accessibilità.
+
+\subsection{\textbf{Percepibile }}
+\subsubsection{\textbf{Alternative testuali}}
+
+Per ogni contenuto non testuale dentro il sito, abbiamo fornito un contenuto testuale e a seconda del dispositivo usato, e della disabilità dei nostri utenti, si adatta senza difficoltà.Per i non vedenti, abbiamo fatto delle prove usando \textcolor{red}{\textbf{NVDA}} che è un screen reader per i non vedenti e una stampa a  caratteri grandi.
+
+\subsubsection{\textbf{Media temporizzati}} 
+Essendo un po' difficile e poco accessibili per i disabili,in particolare per i non vedenti, non abbiamo fatto uso dei video, delle gallerie foto  nemmen o dei testuali scorevoli che sono quasi inaccessibile.
+
+\subsubsection{\textbf{Distinguibile }}
+Per assicurare l'accessibilità, abbiamo fatto un test visivo sui due colori di base usati nel sito (bianco(\#FFFFFF) e darkred(\#840000)) tramite il link \textcolor{red}{\textbf{https://webaim.org/}} che ci ha portato a un risultato positivo cioè un contrast ratio di \textcolor{red}{10.60:1} come si vede nella Figura \textcolor{red}{ \ref{testvis}}. 
+ 
+ 
+ 
+ \begin{figure}[H]
+ \centering
+ \includegraphics[width=0.7\textwidth, height=5cm]{testvis.JPG}
+ \caption{Risultato del test visivo sui colori \label{testvis}}
+\end{figure}
+ 
+ 
+ 
+ 
+ 
+\subsection{\textbf{Utilizzabile}}
+
+\subsubsection{\textbf{Tastiera}}
+ Tutte le funzioni del contenuto del sito sono accessibili tramite un'interfaccia di tastiera senza richiedere tempi specifici.è possibile muoversi su tutti i link del sito usando solo \textcolor{red}{TAB}.
+ \subsubsection{\textbf{Adeguata disponibilità di tempo}}
+ Il sito non usa nessuna temporizzazione nel suo contenuto,ma lascia agli utenti la libertà di sfruttare il contenuto ad tempo indeterminato.
+ 
+
+\subsection{\textbf{ Comprensibile}}
+\subsubsection{\textbf{Testi comprensibili}} Essendo proprio ad una cultura (italiana), il nostro sito è stato costruitto usando una codifica 
+\textbf{UTF-8} ed il tag \textbf{lang='it'}
+
+su ogni pagina in generale e per ogni parola straniera per esempio 'Team' abbiamo usato il tag adeguato  per facilitare o per rendere il lavoro dei screen reader piu facile (<span \textbf{lang='en'}>Team</span>).
+
+
+
+\subsubsection{\textbf{Previdibile}}
+Per non confondere i nostri utenti, abbiamo prodotto un sito uniforme in cui un qualsiasi elemento che riceve il focus non provoca un cambiamento automatico del contenuto.
+
+
+\subsection{\textbf{Form}}
+Si puo osservare che tutte le Form presente nel nostro sito hanno una descrizione o seguono una logica identica, per prima,dentro ogni form viene descritto un tag \textbf{label} che ha un identificativo univoco con l'id del tag input che lo segue, ogni volta che l'utente schiaccerà sul label, potrà direttamente inserire il testo dentro la casella apposita.
+
+ \begin{figure}[H]
+
+ \includegraphics[height=2in]{form.JPG}
+ \centering
+ 
+ \caption{Script della form \textcolor{red}{login.php} \label{form}}
+\end{figure}
+
+\subsection{\textbf{Tabelle}}
+Visto che la progettazione di una tabella di dati accessibile richiede maggiore attenzione, abbiamo fatto uso di una seria di metà-informazioni che consentono di capire e interpretare al meglio il contenuto e la struttura di tutte le tabelle usate nel nostro sito.
+ La Figura \textcolor{red}{\textbf{\ref{tabella}}}  è un esempio chiaro di tutti i tag e misure che abbiamo preso nella costruzione delle nostre tabelle.\\
+
+
+L'utilizzo degli attributi quali: \textbf{scope} permette di identificare le celle d'intestazioni, \textbf{caption} permette di associare una didascalia alla tabella,infine \textbf{summary} non visualizzato su web browser standard fornisce un testo leggibile dagli screen reader inidcando una descrizione dei contenuti della struttura e della finalità della tabella.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=2in]{tabella.JPG}
+ \caption{Script usato per Classifica generale dei piloti \label{tabella}}
+ \end{figure}
+ 
+ 
+\subsection{\textbf{Test visivi per utenti con problemi visivi }}
+Abbiamo usato il sito \textcolor{red}{https://www.color-blindness.com/coblis-color-blindness-simulator/} per vedere come appare per il nostro sito alle persone che soffrono di daltonismo. Sotto abbiamo elencato il nome delle malattie e come la persona vede il sito.
+\subsubsection{\textbf{Protanopia}}
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=2in]{protanopia.JPG}
+ \caption{Protanopia/Red-blind \label{protanopia}}
+ \end{figure}
+
+
+
+ \subsubsection{\textbf{Tritanopia }}
+ \begin{figure}[H]
+ \centering
+ \includegraphics[height=2in]{tritanopia.JPG}
+ \caption{Tritanopia/Blue-blind \label{tritanopia}}
+ \end{figure}
+
+\subsubsection{\textbf{Deuteranopia }}
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=2in]{deuteranopia.JPG}
+ \caption{Deuteranopia/Green-blind \label{deuteranopia}}
+ \end{figure}
+ 
+\textcolor{red}{\section{\textbf{Usabilità}}}
+ \subsection{\textbf{Link}}
+Il nostro sito è composto da piu link che abbiamo scelto di lasciare \textbf{sottolineati} in modo che gli utenti se ne accorgono senza difficoltà.
+
+Per la stessa ragione abbiamo scelto di dare un colore diverso ad ogni link che viene cliccato e anche un colore diverso di sfondo per quanto riguarda la navbar( Figura \textcolor{red}{\ref{link}}). Per gli altri link del sito, il colore di sfondo rimane invariato.
+\begin{figure}[H]
+ \includegraphics[width=\textwidth]{link.JPG}
+ \caption{Presentazione dei link della navbar \label{link}}
+ \end{figure}
+ 
+ 
+\subsection{\textbf{Navbar }}
+ Come si può vedere dalla  Figura \textcolor{red}{\ref{navbarpic}}, la navbar è composta da piu link tutti sottolineati alla base.Ogni volta che viene cliccato un link, il suo colore  diventa bianco con lo sfondo redblack che è diverso dagli altri.Ad esempio nella Figura \textcolor{red}{\ref{navbarpic}}, si vede che l'utente sta visitando la Homepage.
+ 
+ \subsection{\textbf{Uso dei Linguaggi(JAVASCRIPT,PHP,CSS,HTML5)}}
+Per la realizzazione completa del sito, abbiamo fatto uso di 4 linguaggi che abbiamo trovato necessari e giusti per soddisfare le nostre aspettative e i requisiti del progetto.\\
+
+ \textcolor{red}{\textbf{- Javascript:}} essendo un linguaggio interpretato \textbf{ lato client}, il suo uso nel nostro sito era imperativo e ci ha aiutato a fare controlli su tutte le form che vengono compilate assicurandosi che tutti i campi della form siano compilati prima di essere inviati.Per realizzare il bottone(ci permette di tornare su) che si vede nella Figura \textcolor{red}{\textbf{\ref{bottone}}} in tutte le pagine è stato usato javascript.Il controllo si fa in tempo reale senza aspettare un reload della pagina.\\
+
+ 
+  \textcolor{red}{\textbf{- Php:}} per fornire agli utenti un sito efficiente del punto di vista dell'usabilità e per i requisiti che ci impone il progetto,
+  
+ 
+
+php essendo un linguaggio interpretato \textbf{lato server},ci aiuta ad avere delle pagine dinamiche cioè ci permette di eliminare, inserire, modificare, aprire, leggere file sul server ed interagire in modo perfetto col database.
+  
+   
+  
+   \begin{figure}[h]
+ \centering
+ \includegraphics[height=1in]{bottone.JPG}
+ \caption{Torna su \label{bottone}}
+ \end{figure}
+ 
+  
+   \textcolor{red}{\textbf{- CSS:}} visto che i fogli di stile favoriscono la separazione tra presentazione e contenuto, abbiamo usato il css in modo appropriato per rendere il sito non solo piu bello ma anche per essere in grado di modificare facilmente il layout quando lo vogliamo.
+   
+    \textcolor{red}{\textbf{- HTML5:}} per il contenuto del sito, abbiamo preferito usare HTML5 in modo da rendere piu chiaro e semplice la trasmissione delle informazioni.
+    
+    
+    \subsection{\textbf{Azioni dell amministratore }}
+    Nel sito, è stato implementata una parte dedicata in cui solo l'amministratore potra fare aggiornamenti sul sito.
+    L'amministratore puo aggiungere su ogni singola pagina del sito una informazione relativa alla pagina per esempio, dopo ogni gara,potra inserire la posizione di ogni pilota in maniera che la classifica sia fatta automaticamente. nella stessa maniera potra togliere informazioni che non sono piu rilevante per il sito ad esempio una recensione che non centra niente col sito.
+    
+    
+    
+    \textcolor{red}{\section{\textbf{Compatibilità dei browser}}}
+    Alla fine del nostro lavoro, abbiamo preso il tempo di verificare i browser compatibili col nostro sito.Dopo le prove fatte sui nostri computer abbiamo rilevato che il sito era compatibile con: \textcolor{red}{\textbf{Mozilla Firefox, Google chrome, Microsoft Edge, tutti i dispositivi mobili(tablet, telefono, ecc..)}}
+ 
+   
+   
+\end{document}
